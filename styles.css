@@ -158,12 +158,17 @@ main{
 /*tabla*/
 /*Estilos para la tabla*/
 
+.main-tables-container{
+display: flex;
+justify-content: center;
+}
+
 .main-currency-table{
    width: 70%;
    min-width: 235px;
    max-width: 500px;
    height: 360px;
-   margin: 0 auto;
+  
    font-family: "Inter", sans-serif;
 }
 
@@ -173,6 +178,14 @@ font-size: 1.8rem;
 font-weight: bold;
 line-height: 2.3rem;
 color: var(--bitcoin-orange);
+}
+
+.main-currency-table .currency-table--title-two{
+    margin-bottom: 15px;
+font-size: 1.8rem;
+font-weight: bold;
+line-height: 2.3rem;
+    color: var(--secondary-blue);
 }
 
 .currency-table--container{
@@ -370,18 +383,21 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 .bitcoin-img-container{
     width: 100%;
     min-width: 320px;
-    height: 50vh;
+    height: 60vh;
     background-image: url(./assets/img/bitcoinbaby2x.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .bitcoin-img-container h2{
 color: var(--just-white);
 text-align: center;
-padding-top: 60px;
-font-size: 2.4rem;
+
+font-size: 2.8rem;
 line-height: 2.6rem;
 font-weight: bold;
 }
@@ -578,10 +594,25 @@ vertical-align:text-bottom;
     opacity: 0.5; /* Agregar opacidad por defecto */
   }
 
+  .main-tables-container{
+    display: inline;
+
+  }
+  .main-tables-container div{
+    margin: 0 auto;
+  }
+
   .center-card {
     opacity: 1; /* La tarjeta central siempre es visible */
   }
+
+  .bitcoin-img-container{
+    height: 60vh;
+   
+  }
+
 }
+
  /*Footer*/
  footer{
     display: flex;
