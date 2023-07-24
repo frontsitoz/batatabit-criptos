@@ -260,11 +260,30 @@ line-height: 2.3rem;
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
+
+
 .currency-table--date p{
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-black);
 }
+
+.currency-table--date2{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+
+.currency-table--date2 p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black); 
+}
+
 /*Tercera seccion*/
 .main-product-detail{
     position: relative;
@@ -556,6 +575,28 @@ right: -10px;
 vertical-align:text-bottom;
 }
 
+
+
+footer {
+    background-color: var(--bitcoin-orange);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el texto de copyright */
+  span.copyrigh{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+   
+    padding-top: 120px;
+  }
+  
+
 /* Estilos para pantallas de ancho mayor a 1060px (modo desktop) */
 @media screen and (min-width: 1060px) {
     .plans-container--slider {
@@ -567,6 +608,16 @@ vertical-align:text-bottom;
     .plans-container--card {
       max-width: 300px; /* Ajusta este valor según tus necesidades */
     }
+
+    .left{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+    }
   }
 /* Estilos para pantallas de ancho menor a 768px (modo móvil) */
 @media screen and (max-width: 767px) {
@@ -577,6 +628,10 @@ vertical-align:text-bottom;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+  }
+
+  footer .left ul {
+    flex-direction: column;
   }
 
   .plans-container--card {
@@ -591,7 +646,7 @@ vertical-align:text-bottom;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-    opacity: 0.5; /* Agregar opacidad por defecto */
+   /* opacity: 0.5;  Agregar opacidad por defecto */
   }
 
   .main-tables-container{
@@ -619,21 +674,26 @@ vertical-align:text-bottom;
     width: 100%;
     background-color: var(--bitcoin-orange);
     height: 150px;
+   
  }
  footer section{
 display: flex;
 width: 50%;
-justify-content: center;
+justify-content: space-evenly;
 align-items:center;
  }
+
 
  footer .left ul{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
+    display: flex;
+    
  }
  .left li{
+    padding: 0 20px;
     margin: 10px 0;
  }
 
@@ -641,6 +701,11 @@ align-items:center;
     color: var(--just-white);
     text-align: none;
     text-decoration: none;
+ }
+
+ footer .right img{
+    min-width: 50px;
+    max-width: 100px;
  }
 
  
