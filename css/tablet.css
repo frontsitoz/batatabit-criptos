@@ -1,0 +1,141 @@
+
+
+/* Estilos para pantallas de ancho mayor a 1060px (modo desktop) */
+@media screen and (min-width: 1060px) {
+    .plans-container--slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .plans-container--card {
+      max-width: 300px; /* Ajusta este valor según tus necesidades */
+    }
+
+    .left{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+    }
+  
+  }
+
+  @media screen and (min-width: 767px) {
+    .product-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 930px;
+      margin: 0 auto;
+      box-sizing: border-box; /* Agregamos esta línea */
+    }
+
+    
+  }
+/* Estilos para pantallas de ancho menor a 768px (modo móvil) */
+@media screen and (max-width: 767px) {
+  .plans-container--slider {
+    display: flex;
+    gap: 10px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+
+  footer .left ul {
+    flex-direction: column;
+  }
+
+  .plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+   /* opacity: 0.5;  Agregar opacidad por defecto */
+  }
+  .main-tables-container{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    justify-content: center;
+
+  }
+
+  .main-tables-container div{
+    margin: 0 auto;
+  }
+
+  .center-card {
+    opacity: 1; /* La tarjeta central siempre es visible */
+  }
+
+  .bitcoin-img-container{
+    height: 60vh;
+   
+  }
+
+}
+
+/* Estilos para pantallas de ancho mayor a 480px (modo desktop) */
+@media screen and (min-width: 481px) {
+    .plans-container--slider {
+      display: flex;
+      gap: 10px;
+      height: 316px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+      padding: 0 30px; /* Agregar un poco de espacio a los lados del scroll */
+    }
+  
+    .plans-container--card {
+      max-width: 300px;
+    }
+  }
+  
+  /* Estilos para pantallas de ancho menor o igual a 480px (modo móvil) */
+  @media screen and (max-width: 480px) {
+    .plans-container--slider {
+      display: flex;
+      gap: 10px;
+      height: 316px;
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+    }
+  
+    .plans-container--card {
+      position: relative;
+      scroll-snap-align: center;
+      max-width: 300px;
+      height: 250px;
+      margin: 50px 20px 0;
+      padding: 0 15px;
+      background-color: var(--just-white);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+      opacity: 0.5; /* Agregar opacidad por defecto */
+    }
+  
+    .center-card {
+      opacity: 1; /* La tarjeta central siempre es visible */
+    }
+  }
+  
+  /* Estilos para el scroll horizontal */
+  .plans-container--slider::-webkit-scrollbar {
+    width: 6px; /* Ancho del scroll */
+    height: 6px; /* Altura del scroll */
+  }
+  
